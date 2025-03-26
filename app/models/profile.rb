@@ -1,4 +1,4 @@
 class Profile < ApplicationRecord
 	has_many :users
-	serialize :permissions, Array
+	serialize :permissions, Array, coder: JSON 
 end
